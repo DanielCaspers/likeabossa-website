@@ -1,3 +1,11 @@
+# likeabossa-website
+This repo is used to help manage likeabossa.com, which is a website that I own and maintain. 
+
+The website underwent many changes in order to get to where it is today, but I have decided that it will be easiest to maintain it through GitHub as I continue.
+
+Below is the original readme as this came from a StartBootstrap template. 
+
+
 # [Start Bootstrap](http://startbootstrap.com/) - [Agency](http://startbootstrap.com/template-overviews/agency/)
 
 [Agency](http://startbootstrap.com/template-overviews/agency/) is a one page agency portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, a responsive timeline, and a working PHP contact form.

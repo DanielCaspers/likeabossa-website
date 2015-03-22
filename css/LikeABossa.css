@@ -384,14 +384,14 @@ section {
 section h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
-    font-size: 40px;
+    font-size: 2.75em;
 }
 
 section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
+    font-size: 1.5em;
     font-style: italic;
     font-weight: 400;
 }

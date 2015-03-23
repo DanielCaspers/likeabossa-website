@@ -23,10 +23,15 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <!-- This can be accomplished in one call -->
+	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700|Kaushan+Script|Droid+Serif:400,700,400italic,700italic|Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+	<!--
+	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+	-->
+	
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -95,8 +100,9 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-heading header-shadow"><i class="text-primary">Live</i> Music</div>
-                <!--<div class="intro-lead-in header-shadow"> The Way It Should Be... <span class="text-brand">Like a Bossa (Nova)</span></div> -->
+                <div class="intro-heading header-shadow">
+					<i class="text-primary">Live</i> Music
+				</div>
 				<div class="intro-lead-in header-shadow"> 
 					<p>The Way It Should Be... </p>
 					<p class="text-brand">Like a Bossa (Nova)</p>
@@ -114,9 +120,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">What We Do</h2>
-					
-					<!-- Used to insert blank space -->
-                    <h3 class="section-subheading text-muted">We are musicians who would love to play for your event!</h3>
+					<h3 class="section-subheading text-muted">We are musicians who would love to play for your event!</h3>
 				</div>
             </div>
 
@@ -163,14 +167,15 @@
 	
 	<!-- Listen To Us Section -->
 	<section id = "portfolio" class = "bg-light-gray">
-		<div class="row">
-			<div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Listen To Us</h2>
-                    <!-- <h3 class="section-subheading text-muted"></h3> -->
+	    <div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2 class="section-heading">Listen To Us</h2>
+				</div>
 			</div>
-		</div>
-		<div class = "container audioPlayer">
-			<iframe width="100%" height="450px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/71933657&amp;color=fc9814&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+			<div class = "audioPlayer">
+				<iframe width="100%" height="450px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/71933657&amp;color=fc9814&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+			</div>
 		</div>
 	</section>
 	
@@ -226,7 +231,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="band-member">
-                        <img src="img/band/Dan.jpg" class="img-responsive img-circle" alt="Dan Caspers of Like A Bossa playing his keyboard at a Christmas party">
+                        <img src="img/band/Dan.jpg" height="225" width="225" class="img-responsive img-circle" alt="Dan Caspers of Like A Bossa playing his keyboard at a Christmas party">
                         <h4>Dan Caspers</h4>
                         <h6 class="text-muted">Developer by Day, Keyboardist by Night</h6>
 						<p class="text-muted">Dan is working towards a Bachelor of Science in Computer Science at the University of Minnesota with an emphasis in Human Computer Interaction. He hopes to find a way to tie his love 
@@ -249,7 +254,7 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="band-member">
-                        <img src="img/band/Gordon.jpg" class="img-responsive img-circle" alt="Gordon Hayes of Like A Bossa playing his tenor saxophone at a concert">
+                        <img src="img/band/Gordon.jpg" height="225" width="225" class="img-responsive img-circle" alt="Gordon Hayes of Like A Bossa playing his tenor saxophone at a concert">
                         <h4>Gordon Hayes</h4>
                         <h6 class="text-muted">Saxophonist, Composer and Arranger</h6>
 						<!-- <p>Gordon is working towards a Bachelor of Music in <a href="http://d.umn.edu/music/faculty/faculty_jazz.html"> Jazz Studies at the University of Minnesota - Duluth </a>. His musical vision is 
@@ -306,7 +311,7 @@
                         <li>
                             <div class="timeline-image">
 								<a class = "page-scroll" href="#contact">
-									<img class="img-circle img-responsive" src="img/bookUs/contact.jpg" alt="Contact Like A Bossa for information about adding live music to your event!">
+									<img height="200" width="200" class="img-circle img-responsive" src="img/bookUs/contact.jpg" alt="Contact Like A Bossa for information about adding live music to your event!">
 								</a>
 							</div>
                             <div class="timeline-panel">
@@ -325,7 +330,7 @@
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/bookUs/planning.jpg" alt="We make planning live music for your event easy">
+                                <img height="200" width="200" class="img-circle img-responsive" src="img/bookUs/planning.jpg" alt="We make planning live music for your event easy">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -341,7 +346,7 @@
                         </li>
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/bookUs/practicing.jpg" alt="We practice our set for your event well in advance so it is polished.">
+                                <img height="200" width="200" class="img-circle img-responsive" src="img/bookUs/practicing.jpg" alt="We practice our set for your event well in advance so it is polished.">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -358,7 +363,7 @@
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/bookUs/perform.jpg" alt="Like A Bossa performs live music at events, birthday parties, galas, fundraisers and more.">
+                                <img height="200" width="200" class="img-circle img-responsive" src="img/bookUs/perform.jpg" alt="Like A Bossa performs live music at events, birthday parties, galas, fundraisers and more.">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -383,17 +388,17 @@
             <div class="row">
                 <div class="col-md-4 col-sm-6">
                     <a href="http://www.seasonsapplevalley.org/">
-                        <img src="img/clientLogos/ecu-logo.jpg" class="img-responsive img-centered" alt="Ecumen Seasons at Apple Valley logo">
+                        <img height="48" width="230" src="img/clientLogos/ecu-logo.jpg" class="img-responsive img-centered" alt="Ecumen Seasons at Apple Valley logo">
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <a href="http://www.northfieldhistory.org/">
-                        <img src="img/clientLogos/NHS.png" class="img-responsive img-centered" alt="Northfield (Minnesota's) Historical Society">
+                        <img height="56" width="300" src="img/clientLogos/NHS.png" class="img-responsive img-centered" alt="Northfield (Minnesota's) Historical Society">
                     </a>
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <a href="http://rejoicenorthfield.org/">
-                        <img src="img/clientLogos/Rejoice.png" class="img-responsive img-centered" alt="Rejoice! Church of Dundas, Minnesota">
+                        <img height="57" width="360" src="img/clientLogos/Rejoice.png" class="img-responsive img-centered" alt="Rejoice! Church of Dundas, Minnesota">
                     </a>
                 </div>
             </div>

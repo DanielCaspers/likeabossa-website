@@ -84,14 +84,18 @@ a.large {
     font-size: 1.7em;
 }
 a {
-    color: #fc9814; /*#fed136*/
+    color: #fc9814; 
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #c97403;/*#b06a0e;*//*fec503*/
+    color: #c97403;
+}
+
+h6{
+	font-size:0.9em;
 }
 
 h1,

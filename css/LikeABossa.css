@@ -1,4 +1,7 @@
 /*!
+ * Like A Bossa has at the core used the template below, although it has been
+ * extended and reworked considerably to make this a truly custom-fit website:
+ 
  * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
@@ -713,19 +716,13 @@ footer {
     text-align: center;
 }
 
-footer span.copyright {
+footer span.footerText {
     text-transform: uppercase;
     text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
-}
+	margin-bottom: 0;
 
-footer ul.quicklinks {
-    margin-bottom: 0;
-    text-transform: uppercase;
-    text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    line-height: 40px;
 }
 
 ul.social-buttons {

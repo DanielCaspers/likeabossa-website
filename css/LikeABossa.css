@@ -12,10 +12,6 @@ body {
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-.bold{
-	font-weight:bold;
-}
-
 .centerBullets{
     width:200px;
     margin:0 auto;
@@ -27,6 +23,22 @@ body {
              0px 4px 2px rgba(0,0,0,0.15),
              0px 4px 2px rgba(0,0,0,0.1),
              0px 4px 2px rgba(0,0,0,0.1);
+}
+
+.text-bold{
+	font-weight:bold;
+}
+
+.text-italic{
+	font-weight:bold;
+}
+
+.text-align-center{
+	text-align:center;
+}
+
+.text-align-justify{
+	text-align:justify;
 }
 
 .text-muted {
@@ -284,6 +296,27 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
     background-color: #fc9814;
+}
+
+@media(min-width:308px) and (max-width:408px) {
+    .navpad {
+		padding-top: 5px;
+		line-height: 18px;
+	}
+}
+
+@media(min-width:409px) and (max-width:513px) {
+    .navpad {
+		padding-top: 8px;
+		line-height: 18px;
+	}
+}
+
+
+@media(min-width:514px) and (max-width:767px) {
+    .navpad {
+		padding-top: 15px;
+	}
 }
 
 @media(min-width:768px) {

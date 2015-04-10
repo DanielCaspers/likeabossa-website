@@ -365,7 +365,7 @@ header {
 
     background-position: center center;
     background-repeat: none;
-    -webkit-background-size: cover;
+    background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;

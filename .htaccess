@@ -2,7 +2,7 @@
 ExpiresActive On
  
 # Expires after 1 month
-<filesMatch ".(gif|png|jpg|jpeg|ico|js|htm|html|txt)$">
+<filesMatch ".(gif|png|jpg|jpeg|ico|js|htm|html|css|txt)$">
 Header set Cache-Control "max-age=2592000"
 
 # Allow all browser users to cache this

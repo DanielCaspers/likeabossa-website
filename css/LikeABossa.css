@@ -356,12 +356,12 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    /*background-image: url(../img/header-bg-edit2.jpg);*/
+    /*background-image: url(../img/header-bg.jpg);*/
 	background-image: linear-gradient(
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url(../img/header-bg-edit2.jpg);
+    url(../img/header-bg.jpg);
 
     background-position: center center;
     background-repeat: none;

@@ -81,6 +81,14 @@ p.large {
     font-size: 1.2em;
 }
 
+/* 
+Used to allow for easy "concatenation" of lists in smaller views that were split for larger form factor viewing
+*/
+@media( max-width: 767px){
+	ul.merge-with-previous-list, ol.merge-with-previous-list {
+		margin-top:-10px;
+	}
+}
 li.repertoire{
 	font-size: 1.25em;
 }
@@ -709,51 +717,55 @@ section#contact .form-group textarea.form-control {
 
 section#contact .form-control:focus {
     border-color: #fc9814;
+	border-width:4px;
     box-shadow: none;
+	/*color: #bbb; */
+	color: #222;
+
 }
 
 section#contact::-webkit-input-placeholder {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
-    color: #bbb;
+    color: #222;
 }
 
 section#contact:-moz-placeholder {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
-    color: #bbb;
+    color: #222;
 }
 
 section#contact::-moz-placeholder {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
-    color: #bbb;
+    color: #222;
 }
 
 section#contact:-ms-input-placeholder {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
-    color: #bbb;
+    color: #222;
 }
 
 section#contact .text-danger {
-    color:  #c97403;
+    color:  #fc9814;
+	font-weight:bold;
 }
 
 footer {
-    padding: 25px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
 footer span.footerText {
-    text-transform: uppercase;
     text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    line-height: 40px;
+    line-height: 30px;
 	margin-bottom: 0;
 
 }

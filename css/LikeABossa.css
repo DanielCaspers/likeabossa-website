@@ -1,6 +1,6 @@
-/*!
+/*
  * Like A Bossa has at the core used the template below, although it has been
- * extended and reworked considerably to make this a truly custom-fit website:
+ * extensively reworked to make this a truly custom-fit website:
  
  * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
@@ -10,21 +10,10 @@
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+	webkit-tap-highlight-color:  #fdc275;
 }
 
-.centerBullets{
-    width:200px;
-    margin:0 auto;
-    text-align:left;
-}
-
-.header-shadow{
-	text-shadow: 0px 3px 0px #000000,
-             0px 4px 2px rgba(0,0,0,0.15),
-             0px 4px 2px rgba(0,0,0,0.1),
-             0px 4px 2px rgba(0,0,0,0.1);
-}
-
+/* Text utility classes */
 .text-bold{
 	font-weight:bold;
 }
@@ -33,37 +22,28 @@ body {
 	font-weight:italic;
 }
 
-.text-align-center{
-	text-align:center;
+.text-brand{
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    color:  #fc9814;
 }
 
-.text-align-justify{
-	text-align:justify;
+.text-primary {
+    color: #fc9814;
 }
 
 .text-muted {
     color: #777;
 }
 
-.text-primary {
-    color: #fc9814; /*#fed136*/
+.text-light{
+    color: #ffffff;
 }
 
-.text-secondary{
-	color:#ffffff;
-}
-
-.text-brand{
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color:  #fc9814;
-}
-
-.text-navbar{
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-
-.text-link{
-	color: #0000ff;
+.text-shadow{
+	text-shadow: 0px 3px 0px #000000,
+             0px 4px 2px rgba(0,0,0,0.15),
+             0px 4px 2px rgba(0,0,0,0.1),
+             0px 4px 2px rgba(0,0,0,0.1);
 }
 
 p {
@@ -71,7 +51,7 @@ p {
     line-height: 1.75;
 }
 
-p.extraSmall{
+p.extra-small{
     font-size: 0.9em;
 }
 p.small{
@@ -84,16 +64,19 @@ p.large {
 /* 
 Used to allow for easy "concatenation" of lists in smaller views that were split for larger form factor viewing
 */
-@media( max-width: 767px){
+@media(max-width: 767px){
 	ul.merge-with-previous-list, ol.merge-with-previous-list {
 		margin-top:-10px;
 	}
 }
-li.repertoire{
+
+/* Formats the list items in the Song List section */ 
+ul.repertoire li,
+ol.repertoire li{
 	font-size: 1.25em;
-}
-.audioPlayer{
-	vertical-align:middle;
+	width:200px;
+    margin:0 auto;
+    text-align:left;
 }
 
 a,
@@ -140,62 +123,14 @@ h6 {
     background-color: #f7f7f7;
 }
 
-.bg-darkest-gray {
+.bg-dark-gray {
     background-color: #222;
-}
-
-.btn-primary {
-    border-color:  #fc9814
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #fff;
-    background-color:  #fc9814;
-}
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active,
-.open .dropdown-toggle.btn-primary {
-    border-color: #f6bf01;
-    color: #fff;
-    background-color:  #c97403;/*fec503*/
-}
-
-.btn-primary:active,
-.btn-primary.active,
-.open .dropdown-toggle.btn-primary {
-    background-image: none;
-}
-
-.btn-primary.disabled,
-.btn-primary[disabled],
-fieldset[disabled] .btn-primary,
-.btn-primary.disabled:hover,
-.btn-primary[disabled]:hover,
-fieldset[disabled] .btn-primary:hover,
-.btn-primary.disabled:focus,
-.btn-primary[disabled]:focus,
-fieldset[disabled] .btn-primary:focus,
-.btn-primary.disabled:active,
-.btn-primary[disabled]:active,
-fieldset[disabled] .btn-primary:active,
-.btn-primary.disabled.active,
-.btn-primary[disabled].active,
-fieldset[disabled] .btn-primary.active {
-    border-color:  #fc9814;
-    background-color:  #fc9814;
-}
-
-.btn-primary .badge {
-    color: #fc9814;
-    background-color: #fff;
 }
 
 .btn-xl {
     padding: 20px 40px;
     border-color:  #fc9814;
+	border-width:3px;
     border-radius: 3px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -247,6 +182,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default {
     border-color: transparent;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #222;
 }
 
@@ -282,7 +218,6 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .nav li a {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
@@ -306,15 +241,16 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fc9814;
 }
 
+/* The following #navbar-text media queries change text positioning on various screen sizes */
 @media(min-width:308px) and (max-width:408px) {
-    .navpad {
+    #navbar-text {
 		padding-top: 5px;
 		line-height: 18px;
 	}
 }
 
 @media(min-width:409px) and (max-width:513px) {
-    .navpad {
+    #navbar-text {
 		padding-top: 8px;
 		line-height: 18px;
 	}
@@ -322,7 +258,7 @@ fieldset[disabled] .btn-xl.active {
 
 
 @media(min-width:514px) and (max-width:767px) {
-    .navpad {
+    #navbar-text {
 		padding-top: 15px;
 	}
 }
@@ -450,7 +386,9 @@ section h3.section-subheading {
     }
 }
 
-.service-heading {
+#services h4.service-heading,
+#services h5.service-heading,
+#services h6.service-heading {
     margin: 15px 0;
     text-transform: none;
 }
@@ -670,7 +608,7 @@ section h3.section-subheading {
 
 .band-member img {
     margin: 0 auto;
-    border: 6px solid #222;/*#f7f7f7;*/			/*I AM THE OTHER THING TO MAKE CONSISTENt */
+    border: 6px solid #222;
 }
 
 .band-member h4 {
@@ -717,11 +655,9 @@ section#contact .form-group textarea.form-control {
 
 section#contact .form-control:focus {
     border-color: #fc9814;
-	border-width:4px;
+	border-width:3px;
     box-shadow: none;
-	/*color: #bbb; */
 	color: #222;
-
 }
 
 section#contact::-webkit-input-placeholder {
@@ -754,7 +690,7 @@ section#contact:-ms-input-placeholder {
 
 section#contact .text-danger {
     color:  #fc9814;
-	font-weight:bold;
+	font-weight:600;
 }
 
 footer {
@@ -820,8 +756,4 @@ img::selection {
 
 img::-moz-selection {
     background: 0 0;
-}
-
-body {
-    webkit-tap-highlight-color:  #fdc275;
 }

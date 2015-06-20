@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-16">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,16 +51,14 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
 					
-					<!-- Draws 3 bars for our icon tray when screen is xs -->
-                    
+					<!-- Draws 3 bars for our icon tray when screen is xs -->                   
 					<span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
 				
-                <a class="navbar-brand header-shadow page-scroll large" href="#page-top">Like a Bossa</a>
-				<!-- p class="text-secondary header-shadow text-center text-navbar small"> Musicians from Minneapolis/St. Paul and Duluth</p> -->
-				<p class="bold text-secondary text-center text-navbar extraSmall navpad">Musicians from Minneapolis/St. Paul and Duluth</p>
+                <a class="navbar-brand text-shadow page-scroll large" href="#page-top">Like a Bossa</a>
+				<p class="text-center extra-small text-light" id="navbar-text">Musicians from Minneapolis/St. Paul and Duluth</p>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -97,10 +93,10 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-heading header-shadow">
+                <div class="intro-heading text-shadow">
 					<i class="text-primary">Live</i> Music
 				</div>
-				<div class="intro-lead-in header-shadow"> 
+				<div class="intro-lead-in text-shadow"> 
 					<p>The Way It Should Be... </p>
 					<p class="text-brand">Like a Bossa (Nova)</p>
 				</div> 
@@ -122,18 +118,13 @@
             </div>
 
             <div class="row text-center">
-				<div class="col-md-3 col-sm-6"> <!-- add col-sm-6 here, but then won't align right -->
+				<div class="col-md-3 col-sm-6"> 
 					<span class="fa-stack fa-3x">
 						<i class="fa fa-circle fa-stack-2x text-primary"></i>
 						<i class="fa fa-music fa-stack-1x fa-inverse"></i>
 					</span>
 					<h4 class="service-heading">Live Entertainment</h4>
-					<!-- V1.0 Text-->
-					<!--<p class="text-muted">Nothing livens up an event like live music! We play at events of all sizes. 
-						From coffee shops to concerts, we find ways to make our performances more than just a treat for the ears.
-					</p> -->
-					
-					<!-- V1.1 Text-->
+
 					<p class="text-muted">Nothing quite spices up an event or venue like live music! 
 						Whether we are playing at a coffee shop or a concert, 
 						we find ways to make our performances more than just a treat for the ears.
@@ -145,16 +136,14 @@
                         <i class="fa fa-cutlery fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Dinner/Ambient Music</h4>
-					<!-- V1.0 Text-->
-                    <!--<p class="text-muted">Concert quality music at an unobtrusive volume. This is an easy way to spice up any event!</p> -->
-					
-					<!-- V1.1 Text-->
+
 					<p class="text-muted">If you don't want us to be the centerpiece, we understand.
 						We can play our concert quality music at an unobtrusive volume so that your 
 						guests can still hold conversations comfortably.
 					</p>
 				</div>
 				    
+				<!-- Used to help a layout issue that occurred due to the col-sm-6 and trying to go for 2x2 table of elements I believe" -->
 				<div class="clearfix visible-sm"></div>
 
                 <div class="col-md-3 col-sm-6">
@@ -162,11 +151,7 @@
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-user fa-stack-1x fa-inverse"></i>
                     </span>
-					<!-- V1.0 Text-->
-					<!-- <h4 class="service-heading">Personalize</h4> -->
-					<!-- <p class="text-muted">We want to work with <b>you</b> make your event the best it can be! </p> -->
 					
-					<!-- V1.1 Text-->
                     <h4 class="service-heading">Personalization</h4>
                     <p class="text-muted">We want to work with <b>you</b> make your event the best it can be!</p>
 				</div>
@@ -176,11 +161,7 @@
                         <i class="fa fa-tag fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Provide Equipment</h4>
-					<!--v1.0 text -->
-					<!--<p class="text-muted">No sound system? No problem! We have all of our own gear, 
-						but we can work with yours if you'd rather.
-					</p> -->
-					<!-- V1.1 Text-->
+
                     <p class="text-muted">No sound system? No problem! We have all of our own gear, 
 						but we can work with yours if you'd rather. Electricity not included.
 					</p>
@@ -197,7 +178,7 @@
 					<h2 class="section-heading">Listen To Us</h2>
 				</div>
 			</div>
-			<div class = "audioPlayer">
+			<div>
 				<iframe width="100%" height="450px" scrolling="no" frameborder="no" 
 					src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/71933657&amp;color=fc9814&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false">
 				</iframe>
@@ -206,43 +187,42 @@
 	</section>
 	
 	<section id="songs">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 text-center">
-				<h2 class="section-heading">Song List</h2>
-				<h3 class="section-subheading text-muted">Here are some  of the songs we cover. We also take song requests in advance!<h3>
-				<!-- <h3 class="section-subheading text-muted">Here is a partial songbook. If you were really hoping to see a song on here, let us know and we can accommodate.</h3> -->
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-6">
-						<ul class="text-center text-muted">
-							<li class="repertoire centerBullets musicBullet">All of Me</li>
-							<li class="repertoire centerBullets">Autumn Leaves</li>
-							<li class="repertoire centerBullets">Bennie and the Jets</li>
-							<li class="repertoire centerBullets">Isn't She Lovely</li>
-							<li class="repertoire centerBullets">Just the Two of Us</li>
-							<li class="repertoire centerBullets">Moondance</li>
-							<li class="repertoire centerBullets">Once I Loved</li>
-							<li class="repertoire centerBullets">Oye Como Va</li>
-						</ul>
-					</div>
-					<div class="col-sm-6"> 
-						<ul class="text-center text-muted merge-with-previous-list">
-							<li class="repertoire centerBullets">Recordame</li>
-							<li class="repertoire centerBullets">Spooky</li>
-							<li class="repertoire centerBullets">Stella By Starlight</li>
-							<li class="repertoire centerBullets">Take Five</li>
-							<li class="repertoire centerBullets">The Girl From Ipanema</li>
-							<li class="repertoire centerBullets">Waiting in Vain</li>
-							<li class="repertoire centerBullets">Wave</li>
-							<li class="repertoire centerBullets">You Don't Know Me</li>
-						</ul>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2 class="section-heading">Song List</h2>
+					<h3 class="section-subheading text-muted">Here are some of the songs we cover. We also take song requests in advance!<h3>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<ul class="text-center text-muted repertoire">
+								<li>All of Me</li>
+								<li>Autumn Leaves</li>
+								<li>Bennie and the Jets</li>
+								<li>Isn't She Lovely</li>
+								<li>Just the Two of Us</li>
+								<li>Moondance</li>
+								<li>Once I Loved</li>
+								<li>Oye Como Va</li>
+							</ul>
+						</div>
+						<div class="col-sm-6"> 
+							<ul class="text-center text-muted repertoire merge-with-previous-list ">
+								<li>Recordame</li>
+								<li>Spooky</li>
+								<li>Stella By Starlight</li>
+								<li>Take Five</li>
+								<li>The Girl From Ipanema</li>
+								<li>Waiting in Vain</li>
+								<li>Wave</li>
+								<li>You Don't Know Me</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 	</section>
 
     <!-- Band Section -->
@@ -251,7 +231,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">A Symphony of Two</h2>
-                    <h3 class="section-subheading text-muted">We are a small, seasoned duo with 5+ years of experience! </h3> <!-- Under our belt instead of "experience" -->
+                    <h3 class="section-subheading text-muted">We are a small, seasoned duo with 5+ years of experience! </h3>
                 </div>
             </div>
             <div class="row">
@@ -260,20 +240,19 @@
                         <img src="img/band/Dan.jpg" height="225" width="225" class="img-responsive img-circle" alt="Dan Caspers of Like A Bossa playing his keyboard at a Christmas party">
                         <h4>Dan Caspers</h4>
                         <h6 class="text-muted">Developer by Day, Keyboardist by Night</h6>
-						<p class="text-muted text-align-justify">Dan is working towards a Bachelor of Science in Computer Science at the University of Minnesota with an emphasis in Human Computer Interaction. He hopes to find a way to tie his love 
+						<p class="text-muted text-justify">Dan is working towards a Bachelor of Science in Computer Science at the University of Minnesota with an emphasis in Human Computer Interaction. He hopes to find a way to tie his love 
 							of computing technologies and music by putting his talent into a company that makes a positive impact in the lives of musicians. His musical background lacks the pedigree of many keyboardists,
 							but his vast assortment of lesser known influences has led to a style and sound that his colleagues have called "truly one of a kind".</p>
-							<!-- 						
-							<p>Dan is working towards a Bachelor of Science in Computer Science at the University of Minnesota with an emphasis in Human Computer Interaction. He hopes to find a way to tie his love 
-							of computing technologies and music by putting his talent into a company that makes a positive impact in the lives of musicians. His musical background lacks the pedigree of many keyboardists,
-							but his vast assortment of lesser known influences has led to a style and sound that his colleagues have called "truly one of a kind".</p>	 
-							-->							
+						
                         <ul class="list-inline social-buttons">
-                            <li><a href="https://www.facebook.com/dan.caspers"><i class="fa fa-facebook"></i></a>
+                            <li>
+								<a href="https://www.facebook.com/dan.caspers"><i class="fa fa-facebook"></i></a>
                             </li>
-                            <li><a href="https://www.linkedin.com/in/danielcaspers"><i class="fa fa-linkedin"></i></a>
+                            <li>
+								<a href="https://www.linkedin.com/in/danielcaspers"><i class="fa fa-linkedin"></i></a>
                             </li>
-							<li><a href="https://github.com/DanielCaspers"><i class="fa fa-github"></i></a>
+							<li>
+								<a href="https://github.com/DanielCaspers"><i class="fa fa-github"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -283,24 +262,18 @@
                         <img src="img/band/Gordon.jpg" height="225" width="225" class="img-responsive img-circle" alt="Gordon Hayes of Like A Bossa playing his tenor saxophone at a concert">
                         <h4>Gordon Hayes</h4>
                         <h6 class="text-muted">Saxophonist, Composer and Arranger</h6>
-						<!-- <p>Gordon is working towards a Bachelor of Music in <a href="http://d.umn.edu/music/faculty/faculty_jazz.html"> Jazz Studies at the University of Minnesota - Duluth </a>. His musical vision is 
-							divided between developing a personal music aesthetic and reviving the sounds of the masters who inspired his career. An avid listener as well as performer, he has studied the recordings of 
-							jazz giants like Stan Getz, Dexter Gordon and many more to enhance the character and soul of his sound. He has also worked with local professionals like 
-							<a href ="http://zeitgeistnewmusic.org/"> Zeitgeist </a> and renowned ensembles like the UMD Vocal Jazz Cabaret.</p> -->
-						<p class="text-muted text-align-justify"> Gordon is working towards a Bachelor of Music in Jazz Studies under 
-							 <a href="http://www.d.umn.edu/music/faculty/faculty_jazz.html#rfrane"> Ryan Frane </a> and 
+						<p class="text-muted text-justify"> Gordon is working towards a Bachelor of Music in Jazz Studies under 
+							 <a href="http://www.d.umn.edu/music/faculty/faculty_jazz.html#rfrane">Ryan Frane</a> and 
 							 <a href="http://www.d.umn.edu/music/faculty/faculty_jazz.html#abooker">Adam Booker</a>, 
 							 in addition to studying reed instruments with <a href="http://www.d.umn.edu/music/faculty/faculty_jazz.html#tschoen">Theodore Schoen</a>.
 							 His musical vision is divided between trying to develop a personal music aesthetic and trying to revive the sounds of the masters who inspired his career.
 							 An avid listener as well as performer, he's studied the sounds of recording giants like Stan Getz, Dexter Gordon, Chet Baker, and Miles Davis to breathe character and soul into his sound.
-							 He has also worked outside of the realm of jazz with local professionals like <a href ="http://zeitgeistnewmusic.org/"> Zeitgeist </a> as well as performing gospel and pop music in the
+							 He has also worked outside of the realm of jazz with local professionals like <a href ="http://zeitgeistnewmusic.org/">Zeitgeist</a> as well as performing gospel and pop music in the
 							 annual UMD Vocal Jazz Cabaret. This flexibility, the fusion of experimentation and deep rooted tradition, helps elevates Like a Bossa from a cover band to something truly unique.
 						</p>
                         <ul class="list-inline social-buttons">
                             <li><a href="https://www.facebook.com/gordon.hayes.75"><i class="fa fa-facebook"></i></a>
                             </li>
-							<!-- <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li> -->
                             <li><a href="https://soundcloud.com/gordon-wexford-hayes"><i class="fa fa-soundcloud"></i></a>
                             </li>
                         </ul>
@@ -308,7 +281,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-align-justify text-muted">
+                <div class="col-lg-8 col-lg-offset-2 text-justify text-muted">
                     <p>Like a Bossa formed back in our high school years. Most of our performances then were unpaid opportunities to bring live music into the community.
 						We performed at celebrations in our hometown and events at the high school, but the highlight of those years was a concert for disadvantaged young students; some of them
 						had never heard jazz music or even seen a live performance before. After a couple of weeks of classroom visits to motivate the students to join the school band, we took
@@ -330,7 +303,6 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Book Us</h2>
-                    <!-- <h3 class="section-subheading text-muted">Here's what you can expect.</h3> -->
                 </div>
             </div>
             <div class="row">
@@ -341,10 +313,6 @@
 								<a class = "page-scroll" href="#contact">
 									<img height="200" width="200" class="img-circle img-responsive" src="img/bookUs/contact.jpg" 
 											alt="Contact Like A Bossa for information about adding live music to your event!">
-									<!--<span class="fa-stack fa-3x">
-										<i class="fa fa-circle fa-stack-2x text-primary"></i>
-										<i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-									</span> -->
 								</a>
 							</div>
                             <div class="timeline-panel">
@@ -520,5 +488,4 @@
     <script src="js/LikeABossa.js"></script>
 
 </body>
-
 </html>

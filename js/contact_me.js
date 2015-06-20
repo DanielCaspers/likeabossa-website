@@ -1,5 +1,5 @@
 $(function() {
-
+	
     $("input,textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
@@ -8,10 +8,11 @@ $(function() {
         submitSuccess: function($form, event) {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
-            var name = $("input#name").val();
-            var email = $("input#email").val();
-            var phone = $("input#phone").val();
-            var message = $("textarea#message").val();
+			var name = $("input#name").val();
+			var email = $("input#email").val();
+			var phone = $("input#phone").val();
+			var message = $("textarea#message").val();
+			
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
@@ -47,8 +48,8 @@ $(function() {
                         .append("</button>");
                     $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!");
                     $('#success > .alert-danger').append('</div>');
-                    //clear all fields
-                    $('#contactForm').trigger("reset");
+                    //Use to clear all fields, but we don't want to clear out their hard work on server failure.
+                    //$('#contactForm').trigger("reset");
                 },
             })
         },

@@ -160,7 +160,7 @@ ELEMENT DEFINITIONS BELOW LISTED IN ORDER OF OCCURENCE IN INDEX.HTML
 }
  
 .btn-xl {
-    padding: 20px 40px;
+	padding: 20px 40px;
     border-color:  #fc9814;
 	border-width:3px;
     border-radius: 3px;
@@ -277,7 +277,13 @@ fieldset[disabled] .btn-xl.active {
 }
 
 /* The following #navbar-text media queries change text positioning on various screen sizes */
-@media(min-width:308px) and (max-width:408px) {
+@media (max-width:320px){
+	#navbar-text{
+		display:none;
+	}
+}
+
+@media(min-width:321px) and (max-width:408px) {
     #navbar-text {
 		padding-top: 5px;
 		line-height: 18px;
@@ -290,7 +296,6 @@ fieldset[disabled] .btn-xl.active {
 		line-height: 18px;
 	}
 }
-
 
 @media(min-width:514px) and (max-width:767px) {
     #navbar-text {
@@ -570,9 +575,7 @@ ul.social-buttons li a:active {
     width: 80px;
     height: 80px;
     margin-left: 0;
-    border: 3px solid #222; /*  LOOOK AT ME! MAKE THIS CONSISTENT WITH ALL CIRCLE IMAGES*/
-	/* border: 7px solid #f1f1f1;  /*LOOOK AT ME! MAKE THIS CONSISTENT WITH ALL CIRCLE IMAGES*/
-
+    border: 3px solid #222;
     border-radius: 100%;
     text-align: center;
     color: #fff;

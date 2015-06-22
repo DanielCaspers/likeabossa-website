@@ -496,6 +496,10 @@ ul.social-buttons li a {
     transition: all .3s;
 }
 
+ul.social-buttons li a.increase-inner-spacing {
+	margin: 0px 15px;
+}
+
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
@@ -788,9 +792,9 @@ footer {
     text-align: center;
 }
 
-footer span.footerText {
+footer span.footer-text {
     text-transform: none;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    line-height: 30px;
+    line-height: 35px;
 	margin-bottom: 0;
 }

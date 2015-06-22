@@ -13,7 +13,9 @@ body {
 	webkit-tap-highlight-color:  #fdc275;
 }
 
-/* Text utility classes */
+/* ============================================= 
+ *Text utility classes and main text definitions 
+ * ============================================= */
 .text-bold{
 	font-weight:bold;
 }
@@ -44,39 +46,6 @@ body {
              0px 4px 2px rgba(0,0,0,0.15),
              0px 4px 2px rgba(0,0,0,0.1),
              0px 4px 2px rgba(0,0,0,0.1);
-}
-
-p {
-    font-size: 1.1em;
-    line-height: 1.75;
-}
-
-p.extra-small{
-    font-size: 0.9em;
-}
-p.small{
-    font-size: 1em;
-}
-p.large {
-    font-size: 1.2em;
-}
-
-/* 
-Used to allow for easy "concatenation" of lists in smaller views that were split for larger form factor viewing
-*/
-@media(max-width: 767px){
-	ul.merge-with-previous-list, ol.merge-with-previous-list {
-		margin-top:-10px;
-	}
-}
-
-/* Formats the list items in the Song List section */ 
-ul.repertoire li,
-ol.repertoire li{
-	font-size: 1.25em;
-	width:200px;
-    margin:0 auto;
-    text-align:left;
 }
 
 a,
@@ -115,10 +84,24 @@ h6 {
     font-weight: 700;
 }
 
-.img-centered {
-    margin: 0 auto;
+p {
+    font-size: 1.1em;
+    line-height: 1.75;
 }
 
+p.extra-small{
+    font-size: 0.9em;
+}
+p.small{
+    font-size: 1em;
+}
+p.large {
+    font-size: 1.2em;
+}
+
+/* ============================================= 
+ * Background coloring utility classes
+ * ============================================= */
 .bg-light-gray {
     background-color: #f7f7f7;
 }
@@ -127,6 +110,55 @@ h6 {
     background-color: #222;
 }
 
+/* ============================================= 
+ * Sizing and padding utility classes 
+ * ============================================= */
+.img-centered {
+    margin: 0 auto;
+}
+
+/* ============================================= 
+ * Selection selectors
+ * ============================================= */
+
+::-moz-selection {
+    text-shadow: none;
+	color: #222;
+    background:  #fdc275;
+}
+
+::selection {
+    text-shadow: none;
+	color: #222;
+    background:  #fdc275;
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+/*
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+ELEMENT DEFINITIONS BELOW LISTED IN ORDER OF OCCURENCE IN INDEX.HTML
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+*/
+
+/* ============================================================================= 
+ * For buttons (primarily used on the "Tell Me More" button, but also in navbar)
+ * ============================================================================= */
+ .btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+    outline: 0;
+}
+ 
 .btn-xl {
     padding: 20px 40px;
     border-color:  #fc9814;
@@ -138,6 +170,12 @@ h6 {
     font-weight: 700;
     color: #fff;
     background-color:  #fc9814
+}
+
+/* Used for the top in tablet mode where the orange label holds over each active list element in the navbar. Overriding bootstrap */
+.btn-xl .badge {
+    color:  #fc9814;
+    background-color: #fff;
 }
 
 .btn-xl:hover,
@@ -175,15 +213,12 @@ fieldset[disabled] .btn-xl.active {
     background-color:  #fc9814;
 }
 
-.btn-xl .badge {
-    color:  #fc9814;
-    background-color: #fff;
-}
-
+/* ============================================= 
+ * Navigation bar section
+ * ============================================= */
 .navbar-default {
     border-color: transparent;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #222;
 }
 
 .navbar-default .navbar-brand {
@@ -274,7 +309,6 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default .navbar-brand {
-        /*font-size: 2.5em;*/
 		font-size: 2.5em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
@@ -291,11 +325,13 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
-        /*font-size: 1.5em;*/
 		font-size: 2em;
     }
 }
 
+/* ============================================= 
+ * Main cover section 
+ * ============================================= */
 header {
     text-align: center;
     color: #fff;
@@ -361,6 +397,9 @@ header .intro-text .intro-heading {
     }
 }
 
+/* ============================================= 
+ * "Section" tag styling section 
+ * ============================================= */
 section {
     padding: 100px 0;
 }
@@ -386,6 +425,9 @@ section h3.section-subheading {
     }
 }
 
+/* ============================================= 
+ * Services section (a.k.a "What We Do") 
+ * ============================================= */
 #services h4.service-heading,
 #services h5.service-heading,
 #services h6.service-heading {
@@ -393,12 +435,75 @@ section h3.section-subheading {
     text-transform: none;
 }
 
-@media(min-width:767px) {
-    #portfolio .portfolio-item {
-        margin: 0 0 30px;
-    }
+/* ============================================= 
+ * Song list section (a.k.a "Song List") 
+ * ============================================= */
+/* Used to allow for easy "concatenation" of lists in smaller views that were split for larger form factor viewing */
+@media(max-width: 767px){
+	ul.merge-with-previous-list, ol.merge-with-previous-list {
+		margin-top:-10px;
+	}
 }
 
+/* Formats the list items in the Song List section */ 
+ul.repertoire li,
+ol.repertoire li{
+	font-size: 1.25em;
+	width:200px;
+    margin:0 auto;
+    text-align:left;
+}
+
+/* ============================================= 
+ * "Meet the Band" section 
+ * ============================================= */
+.band-member {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.band-member img {
+    margin: 0 auto;
+    border: 6px solid #222;
+}
+
+.band-member h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+}
+
+.band-member p {
+    margin-top: 0;
+}
+
+ul.social-buttons {
+    margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    outline: 0;
+    color: #fff;
+    background-color: #222;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+    background-color:  #fc9814;
+}
+/* ============================================= 
+ * Book us section 
+ * ============================================= */
 .timeline {
     position: relative;
     padding: 0;
@@ -505,10 +610,6 @@ section h3.section-subheading {
     color: inherit;
 }
 
-.timeline .timeline-heading h4.subheading {
-    text-transform: none;
-}
-
 .timeline .timeline-body>p,
 .timeline .timeline-body>ul {
     margin-bottom: 0;
@@ -601,30 +702,16 @@ section h3.section-subheading {
     }
 }
 
-.band-member {
-    margin-bottom: 50px;
-    text-align: center;
-}
-
-.band-member img {
-    margin: 0 auto;
-    border: 6px solid #222;
-}
-
-.band-member h4 {
-    margin-top: 25px;
-    margin-bottom: 0;
-    text-transform: none;
-}
-
-.band-member p {
-    margin-top: 0;
-}
-
+/* ============================================= 
+ * Client Aside 
+ * ============================================= */
 aside.clients img {
     margin: 50px auto;
 }
 
+/* ============================================= 
+ * Contact section 
+ * ============================================= */
 section#contact {
     background-color: #222;
     background-image: url(../img/map-image.png);
@@ -693,6 +780,9 @@ section#contact .text-danger {
 	font-weight:600;
 }
 
+/* ============================================= 
+ * Page Footer
+ * ============================================= */
 footer {
     padding: 20px 0;
     text-align: center;
@@ -703,57 +793,4 @@ footer span.footerText {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 30px;
 	margin-bottom: 0;
-
-}
-
-ul.social-buttons {
-    margin-bottom: 0;
-}
-
-ul.social-buttons li a {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    font-size: 20px;
-    line-height: 40px;
-    outline: 0;
-    color: #fff;
-    background-color: #222;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    transition: all .3s;
-}
-
-ul.social-buttons li a:hover,
-ul.social-buttons li a:focus,
-ul.social-buttons li a:active {
-    background-color:  #fc9814;
-}
-
-.btn:focus,
-.btn:active,
-.btn.active,
-.btn:active:focus {
-    outline: 0;
-}
-
-::-moz-selection {
-    text-shadow: none;
-	color: #222;
-    background:  #fdc275;
-}
-
-::selection {
-    text-shadow: none;
-	color: #222;
-    background:  #fdc275;
-}
-
-img::selection {
-    background: 0 0;
-}
-
-img::-moz-selection {
-    background: 0 0;
 }

@@ -1,30 +1,30 @@
 <?php
-// Check for empty fields
-if(empty($_POST['name'])  		||
-   empty($_POST['email']) 		||
-   empty($_POST['phone']) 		||
-   empty($_POST['message'])	||
-   !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
-   {
-	echo "No arguments provided!";
-	return false;
-   }
+//Constant Declarations
+$EMPTY_ARGS_MESSAGE = "Empty arguments were passed into required fields. Please review contact_me.php!";
+$REQUIRED_FIELD_MESSAGE = "One or more required fields was found to be empty. Please review contact_me.php!";
+$DEFAULT_TO_ADDRESS = "Likeabossa@gmail.com";
+$DEFAULT_PHONE_NUMBER = "";
+
+// Assert that required form fields are non-empty
+if( empty($_POST['name']) || empty($_POST['message']) ){
+   echo $REQUIRED_FIELD_MESSAGE;
+   return false;
+}
 
 //Required Fields   
-$name = isset($_POST['name']) ? $_POST['name'] : "THIS FIELD IS REQUIRED IN CONTACT_ME.PHP! PLEASE REVIEW!";
-$message = isset($_POST['message']) ? $_POST['message'] : "THIS FIELD IS REQUIRED IN CONTACT_ME.PHP! PLEASE REVIEW!";
+$name = isset($_POST['name']) ? $_POST['name'] : $EMPTY_ARGS_MESSAGE;
+$message = isset($_POST['message']) ? $_POST['message'] : $EMPTY_ARGS_MESSAGE;
 
 //Optional Fields
-$email_address = isset($_POST['email']) ? $_POST['email'] : "";
-$phone = isset($_POST['phone']) ? $_POST['phone'] : "";
-	
+$from_email_address = isset($_POST['email']) ? $_POST['email'] : $DEFAULT_TO_ADDRESS;
+$phone = isset($_POST['phone']) ? $_POST['phone'] : $DEFAULT_PHONE_NUMBER;
+    
 // Create the email and send the message
-$to = 'Likeabossa@gmail.com';
 $email_subject = "LikeABossa Contact Form";
-$email_body = "$name wants to talk to you about gigs and stuff.\n\nEmail: $email_address\nPhone: $phone\n\nMessage:\n$message";
-// This is the email address the message will be from. We recommend using noreply@yourdomain.com.
-$headers = "From: $name <$email_address>\n"; 
-$headers .= "Reply-To: $email_address";	
+$email_body = "$name wants to talk to you about gigs and stuff.\n\nEmail: $from_email_address\nPhone: $phone\n\nMessage:\n$message";
+
+$headers = "From: $name <$from_email_address>\n"; 
+$headers .= "Reply-To: $from_email_address";    
 mail($to,$email_subject,$email_body,$headers);
-return true;			
+return true;            
 ?>

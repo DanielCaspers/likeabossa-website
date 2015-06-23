@@ -9,11 +9,14 @@ if(empty($_POST['name'])  		||
 	echo "No arguments provided!";
 	return false;
    }
-	
-$name = $_POST['name'];
-$email_address = $_POST['email'];
-$phone = $_POST['phone'];
-$message = $_POST['message'];
+
+//Required Fields   
+$name = isset($_POST['name']) ? $_POST['name'] : "THIS FIELD IS REQUIRED IN CONTACT_ME.PHP! PLEASE REVIEW!";
+$message = isset($_POST['message']) ? $_POST['message'] : "THIS FIELD IS REQUIRED IN CONTACT_ME.PHP! PLEASE REVIEW!";
+
+//Optional Fields
+$email_address = isset($_POST['email']) ? $_POST['email'] : "";
+$phone = isset($_POST['phone']) ? $_POST['phone'] : "";
 	
 // Create the email and send the message
 $to = 'Likeabossa@gmail.com';

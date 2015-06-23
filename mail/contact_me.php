@@ -25,6 +25,6 @@ $email_body = "$name wants to talk to you about gigs and stuff.\n\nEmail: $from_
 
 $headers = "From: $name <$from_email_address>\n"; 
 $headers .= "Reply-To: $from_email_address";    
-mail($to,$email_subject,$email_body,$headers);
+mail($DEFAULT_TO_ADDRESS,$email_subject,$email_body,$headers);
 return true;            
 ?>

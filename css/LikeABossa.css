@@ -262,8 +262,14 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:focus {
     outline: 0;
     color:  #fc9814;
-	border: 2px #fc9814;
-	border-style: none none solid none;
+	
+	/* Outline "secondary color" border */
+	border: 2px solid #fc9814;
+	border-radius:3px;
+	
+	/* Solid underline border */
+	/*border: 2px #fc9814;
+	border-style: none none solid none;*/
 }
 
 .navbar-default .navbar-nav>.active>a {

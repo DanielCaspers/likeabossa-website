@@ -1,9 +1,15 @@
 # likeabossa-website
-This repo is used to help manage likeabossa.com, which is a website that I own and maintain. 
 
-The website underwent many changes in order to get to where it is today, but I have decided that it will be easiest to maintain it through GitHub as I continue.
+This repo is used to help manage [Like A Bossa's website](http://likeabossa.com), which I am the sole owner and maintainer of as I am the pianist for this musical group. 
 
-Below is the original readme as this came from a StartBootstrap template. 
+## Implementation Details
+
+This site was my way of teaching myself (Bootstrap)[http://getbootstrap.com/], so I decided that it would be best for me to not start from scratch. Therefore, I actually started off of a free project that was open for others to use and architected my site around it. However, one should keep in mind that while there are certainly similarities between the two, much of the website has been tailored to my specific needs so that the template could function as a "rolling chassis". Because of my approach, nearly all of the original code has been revised, refactored or reviewed by me in some way since starting with it. 
+
+## Thanks and considerations
+I owe many thanks to those at StartBootstrap for providing a template for me to start off of. This really gave me a leg to stand on and has helped me become far more proficient in BootStrap. 
+
+Below is the original readme from the template I began from.  
 
 
 # [Start Bootstrap](http://startbootstrap.com/) - [Agency](http://startbootstrap.com/template-overviews/agency/)

@@ -268,12 +268,14 @@ fieldset[disabled] .btn-xl.active {
     border-radius: 0;
     color: #fff;
     background-color:  #fc9814;
+	text-shadow: 2px 2px 3px #222;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
     background-color: #fc9814;
+	text-shadow: 2px 2px 3px #222;
 }
 
 /* The following #navbar-text media queries change text positioning on various screen sizes */

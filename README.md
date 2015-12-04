@@ -1,40 +1,18 @@
 # likeabossa-website
 
-This repo is used to help manage [Like A Bossa's website](http://likeabossa.com), which I am the sole owner and maintainer of as I am the pianist for this musical group. 
+This repo is used to help manage [Like A Bossa's website](http://likeabossa.com). I, Daniel Caspers, am the sole maintainer and owner of the website.
 
 ## Implementation Details
 
-This site was my way of teaching myself [Bootstrap](http://getbootstrap.com), so I decided that it would be best for me to not start from scratch. Therefore, I actually started off of a free, open source template and architected my site around it. However, one should keep in mind that while there are certainly similarities between the two, much of the website has been tailored to my specific needs. Nearly all of the original code has been revised, refactored or reviewed by me in some way since starting with it, so the template functioned more like a "rolling chassis" than a traditional template. 
+This site was my way of teaching myself [Bootstrap](http://getbootstrap.com), so I decided that it would be best for me to not start from scratch. Therefore, I started off of a free, open source template and architected my site around it. However, one should keep in mind that while there are certainly similarities between the two, much of the website has been tailored to fit the needs of our band. Nearly all of the original code has been revised, refactored or reviewed by me in some way, so the template functioned more like a "rolling chassis" than a traditional template. 
 
 ## Thanks and Considerations
-I owe many thanks to those at [Start Bootstrap](http://startbootstrap.com/) for providing the [Agency template](http://startbootstrap.com/template-overviews/agency/). Without this, I may not have developed this personal site and would have lost out on the great learning opportunity developing this site has been. It has opened many doors for me, both personally and professionally and I am grateful that they provided such a great template for me to start from. 
+I owe many thanks to those at [Start Bootstrap](http://startbootstrap.com/) for providing the [Agency template](http://startbootstrap.com/template-overviews/agency/). Without this, I may not have developed this personal site and would have lost out on the great learning opportunity developing this site has been. It has opened many doors for me both personally and professionally and I am grateful that they provided such a great template for me to start from. 
 
 Below is the original readme.
 
-
-# [Start Bootstrap](http://startbootstrap.com/) - [Agency](http://startbootstrap.com/template-overviews/agency/)
-
-[Agency](http://startbootstrap.com/template-overviews/agency/) is a one page agency portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, a responsive timeline, and a working PHP contact form.
-
-## Getting Started
-
-To use this theme, choose one of the following options to get started:
-* Download the latest release on Start Bootstrap
-* Fork this repository on GitHub
-
-## Bugs and Issues
-
-Have a bug or an issue with this theme? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-agency/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/agency/).
-
-## Creator
-
-Start Bootstrap was created by and is maintained by **David Miller**, Managing Partner at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
-
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
 ## Copyright and License
+I have NO copyright for the code created here, but I have chosen to use the [Apache 2.0 license](https://github.com/IronSummitMedia/startbootstrap-agency/blob/gh-pages/LICENSE) for the code I have modified on top of the original template. I respectfully request that you contact me via GitHub or [likeabossa.com](http://www.likeabossa.com) if you intend on extending this code for any reason. 
 
-Copyright 2014 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-agency/blob/gh-pages/LICENSE) license.
+The original Agency template has copyright and licensing information which is included below, which I am required to display.
+Copyright 2014 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0 license.](https://github.com/IronSummitMedia/startbootstrap-agency/blob/gh-pages/LICENSE).

@@ -160,9 +160,9 @@ ELEMENT DEFINITIONS BELOW LISTED IN ORDER OF OCCURENCE IN INDEX.HTML
 }
  
 .btn-xl {
-	padding: 20px 40px;
+		padding: 20px 40px;
     border-color:  #fc9814;
-	border-width:3px;
+		border-width:3px;
     border-radius: 3px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -170,6 +170,13 @@ ELEMENT DEFINITIONS BELOW LISTED IN ORDER OF OCCURENCE IN INDEX.HTML
     font-weight: 700;
     color: #fff;
     background-color:  #fc9814
+}
+
+/* Makes buttons more reasonably sized in mobile form factor */
+@media(max-width: 767px){
+		.btn-xl {
+				padding: 10px 20px;
+		}
 }
 
 /* Used for the top in tablet mode where the orange label holds over each active list element in the navbar. Overriding bootstrap */

@@ -167,7 +167,7 @@ ELEMENT DEFINITIONS BELOW LISTED IN ORDER OF OCCURENCE IN INDEX.HTML
     text-transform: uppercase;
 		text-shadow: 1px 1px 2px #222;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 18px;
+    font-size: 1.2em;
     font-weight: 700;
     color: #fff;
     background-color:  #fc9814
@@ -177,6 +177,7 @@ ELEMENT DEFINITIONS BELOW LISTED IN ORDER OF OCCURENCE IN INDEX.HTML
 @media(max-width: 767px){
 		.btn-xl {
 				padding: 10px 20px;
+				font-size: 1em;
 		}
 }
 

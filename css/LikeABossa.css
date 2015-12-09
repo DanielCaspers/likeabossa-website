@@ -176,7 +176,7 @@ ELEMENT DEFINITIONS BELOW LISTED IN ORDER OF OCCURENCE IN INDEX.HTML
 /* Makes buttons more reasonably sized in mobile form factor */
 @media(max-width: 767px){
 		.btn-xl {
-				padding: 10px 20px;
+				padding: 15px 25px;
 				font-size: 1em;
 		}
 }

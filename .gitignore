@@ -1,2 +1,6 @@
 # Ignore anything produced by JetBrains IDEs
 .idea/*
+
+# Package manager folders
+bower_components/
+node_modules/

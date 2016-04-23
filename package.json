@@ -1,14 +1,14 @@
 {
-  "name": "likeabossa-website",
-  "version": "1.4.0",
-  "description": "A website showcasing the band Like A Bossa, featuring Gordon Hayes and Daniel Caspers.",
-  "author": "Daniel Caspers <likeabossa@gmail.com>",
-  "main": "lib/foo.js",
-  "repository": {
-	"type": "git",
+	"name": "likeabossa-website",
+	"version": "1.4.0",
+	"description": "A website showcasing the band Like A Bossa, featuring Gordon Hayes and Daniel Caspers.",
+	"author": "Daniel Caspers <likeabossa@gmail.com>",
+	"main": "lib/foo.js",
+	"repository": {
+		"type": "git",
 		"url": "https://github.com/DanielCaspers/likeabossa-website"
 	},
-  "bugs": {
+	"bugs": {
 		"url": "https://github.com/DanielCaspers/likeabossa-website/issues"
 	},
 	"keywords": [
@@ -21,20 +21,19 @@
 		"music",
 		"band"
 	],
-  "dependencies": {
-
-  },
-  "devDependencies": {
+	"dependencies": {
+	},
+	"devDependencies": {
 		"bower": "1.7.7",
 		"del": "2.2.0",
 		"gulp": "3.9.1",
-		"gulp-add-src": "0.2.0",
 		"gulp-clean-css": "2.0.3",
 		"gulp-concat": "2.6.0",
+		"gulp-if": "2.0.0",
 		"gulp-uglify": "1.5.3",
 		"run-sequence": "1.1.5"
 	},
-  "private": true,
-  "analyze": true,
-  "license": "Apache 2.0"
+	"private": true,
+	"analyze": true,
+	"license": "Apache 2.0"
 }

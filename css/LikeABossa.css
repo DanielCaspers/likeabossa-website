@@ -8,44 +8,44 @@
  */
 
 body {
-    overflow-x: hidden;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-		webkit-tap-highlight-color:  #fdc275;
+	overflow-x: hidden;
+	font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	webkit-tap-highlight-color: #fdc275;
 }
 
 /* ============================================= 
  *Text utility classes and main text definitions 
  * ============================================= */
-.text-bold{
-		font-weight:bold;
+.text-bold {
+	font-weight: bold;
 }
 
-.text-italic{
-		font-style:italic;
+.text-italic {
+	font-style: italic;
 }
 
-.text-brand{
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color:  #fc9814;
+.text-brand {
+	font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+	color: #fc9814;
 }
 
 .text-primary {
-    color: #fc9814;
+	color: #fc9814;
 }
 
 .text-muted {
-    color: #777;
+	color: #777;
 }
 
-.text-light{
-    color: #ffffff;
+.text-light {
+	color: #ffffff;
 }
 
-.text-shadow{
+.text-shadow {
 	text-shadow: 0px 3px 0px #000000,
-             0px 4px 2px rgba(0,0,0,0.15),
-             0px 4px 2px rgba(0,0,0,0.1),
-             0px 4px 2px rgba(0,0,0,0.1);
+	0px 4px 2px rgba(0, 0, 0, 0.15),
+	0px 4px 2px rgba(0, 0, 0, 0.1),
+	0px 4px 2px rgba(0, 0, 0, 0.1);
 }
 
 a,
@@ -53,24 +53,26 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-    outline: 0;
+	outline: 0;
 }
+
 a.large {
-    font-size: 1.7em;
+	font-size: 1.7em;
 }
+
 a {
-    color: #fc9814; 
+	color: #fc9814;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #c97403;
+	color: #c97403;
 }
 
-h6{
-		font-size:0.9em;
+h6 {
+	font-size: 0.9em;
 }
 
 h1,
@@ -79,42 +81,44 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+	text-transform: uppercase;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
 }
 
 p {
-    font-size: 1.1em;
-    line-height: 1.75;
+	font-size: 1.1em;
+	line-height: 1.75;
 }
 
-p.extra-small{
-    font-size: 0.9em;
+p.extra-small {
+	font-size: 0.9em;
 }
-p.small{
-    font-size: 1em;
+
+p.small {
+	font-size: 1em;
 }
+
 p.large {
-    font-size: 1.2em;
+	font-size: 1.2em;
 }
 
 /* ============================================= 
  * Background coloring utility classes
  * ============================================= */
 .bg-light-gray {
-    background-color: #f7f7f7;
+	background-color: #f7f7f7;
 }
 
 .bg-dark-gray {
-    background-color: #222;
+	background-color: #222;
 }
 
 /* ============================================= 
  * Sizing and padding utility classes 
  * ============================================= */
 .img-centered {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 /* ============================================= 
@@ -122,23 +126,23 @@ p.large {
  * ============================================= */
 
 ::-moz-selection {
-    text-shadow: none;
+	text-shadow: none;
 	color: #222;
-    background:  #fdc275;
+	background: #fdc275;
 }
 
 ::selection {
-    text-shadow: none;
+	text-shadow: none;
 	color: #222;
-    background:  #fdc275;
+	background: #fdc275;
 }
 
 img::selection {
-    background: 0 0;
+	background: 0 0;
 }
 
 img::-moz-selection {
-    background: 0 0;
+	background: 0 0;
 }
 
 /*
@@ -152,39 +156,39 @@ ELEMENT DEFINITIONS BELOW LISTED IN ORDER OF OCCURENCE IN INDEX.HTML
 /* ============================================================================= 
  * For buttons (primarily used on the "Tell Me More" button, but also in navbar)
  * ============================================================================= */
- .btn:focus,
+.btn:focus,
 .btn:active,
 .btn.active,
 .btn:active:focus {
-    outline: 0;
+	outline: 0;
 }
- 
+
 .btn-xl {
-		padding: 20px 40px;
-    border-color:  #fc9814;
-		border-width:3px;
-    border-radius: 3px;
-    text-transform: uppercase;
-		text-shadow: 1px 1px 2px #222;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 1.2em;
-    font-weight: 700;
-    color: #fff;
-    background-color:  #fc9814
+	padding: 20px 40px;
+	border-color: #fc9814;
+	border-width: 3px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 2px #222;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	font-weight: 700;
+	color: #fff;
+	background-color: #fc9814
 }
 
 /* Makes buttons more reasonably sized in mobile form factor */
-@media(max-width: 767px){
-		.btn-xl {
-				padding: 15px 25px;
-				font-size: 1em;
-		}
+@media (max-width: 767px) {
+	.btn-xl {
+		padding: 15px 25px;
+		font-size: 1em;
+	}
 }
 
 /* Used for the top in tablet mode where the orange label holds over each active list element in the navbar. Overriding bootstrap */
 .btn-xl .badge {
-    color:  #fc9814;
-    background-color: #fff;
+	color: #fc9814;
+	background-color: #fff;
 }
 
 .btn-xl:hover,
@@ -192,15 +196,15 @@ ELEMENT DEFINITIONS BELOW LISTED IN ORDER OF OCCURENCE IN INDEX.HTML
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #f6bf01;
-    color: #fff;
-    background-color:  #fc9814; /*fec504*/
+	border-color: #f6bf01;
+	color: #fff;
+	background-color: #fc9814; /*fec504*/
 }
 
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    background-image: none;
+	background-image: none;
 }
 
 .btn-xl.disabled,
@@ -218,242 +222,241 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-    border-color: #fc9814;
-    background-color:  #fc9814;
+	border-color: #fc9814;
+	background-color: #fc9814;
 }
 
 /* ============================================= 
  * Navigation bar section
  * ============================================= */
 .navbar-default {
-    border-color: transparent;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	border-color: transparent;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color:  #fc9814;
+	font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+	color: #fc9814;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color:  #fc9814;
+	color: #fc9814;
 }
 
 .navbar-default .navbar-collapse {
-    border-color: rgba(255,255,255,.02);
+	border-color: rgba(255, 255, 255, .02);
 }
 
 .navbar-default .navbar-toggle {
-    border-color:  #fc9814;
-    background-color:  #fc9814;
+	border-color: #fc9814;
+	background-color: #fc9814;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
+	background-color: #fff;
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color:  #fc9814;
+	background-color: #fc9814;
 }
 
 .navbar-default .nav li a {
-    text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: 1px;
-    color: #fff;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: #fff;
 }
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
-    outline: 0;
-    color:  #fc9814;
-	
-		/* Outline "secondary color" border */
-		border: 2px solid #fc9814;
-		border-radius:3px;
-		
-		/* Solid underline border */
-		/*border: 2px #fc9814;
-		border-style: none none solid none;*/
+	outline: 0;
+	color: #fc9814;
+
+	/* Outline "secondary color" border */
+	border: 2px solid #fc9814;
+	border-radius: 3px;
+
+	/* Solid underline border */
+	/*border: 2px #fc9814;
+	border-style: none none solid none;*/
 }
 
-.navbar-default .navbar-nav>.active>a {
-    border-radius: 0;
-    color: #fff;
-    background-color:  #fc9814;
-		text-shadow: 1px 1px 2px #222;
+.navbar-default .navbar-nav > .active > a {
+	border-radius: 0;
+	color: #fff;
+	background-color: #fc9814;
+	text-shadow: 1px 1px 2px #222;
 }
 
-.navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>.active>a:focus {
-    color: #fff;
-    background-color: #fc9814;
-		text-shadow: 1px 1px 2px #222;
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	color: #fff;
+	background-color: #fc9814;
+	text-shadow: 1px 1px 2px #222;
 }
 
 /* The following #navbar-text media queries change text positioning on various screen sizes */
-@media (max-width:320px){
-		#navbar-text{
-				display:none;
-		}
+@media (max-width: 320px) {
+	#navbar-text {
+		display: none;
+	}
 }
 
-@media(min-width:321px) and (max-width:408px) {
-    #navbar-text {
-				padding-top: 5px;
-				line-height: 18px;
-		}
+@media (min-width: 321px) and (max-width: 408px) {
+	#navbar-text {
+		padding-top: 5px;
+		line-height: 18px;
+	}
 }
 
-@media(min-width:409px) and (max-width:513px) {
-    #navbar-text {
-				padding-top: 8px;
-				line-height: 18px;
-		}
+@media (min-width: 409px) and (max-width: 513px) {
+	#navbar-text {
+		padding-top: 8px;
+		line-height: 18px;
+	}
 }
 
-@media(min-width:514px) and (max-width:767px) {
-    #navbar-text {
-				padding-top: 15px;
-		}
+@media (min-width: 514px) and (max-width: 767px) {
+	#navbar-text {
+		padding-top: 15px;
+	}
 }
 
-@media(min-width:768px) {
-    .navbar-default {
-				padding: 25px 0;
-        border: 0;
-        background-color: transparent;
-        -webkit-transition: padding .3s;
-        -moz-transition: padding .3s;
-        transition: padding .3s;
-    }
+@media (min-width: 768px) {
+	.navbar-default {
+		padding: 25px 0;
+		border: 0;
+		background-color: transparent;
+		-webkit-transition: padding .3s;
+		-moz-transition: padding .3s;
+		transition: padding .3s;
+	}
 
-    .navbar-default .navbar-brand {
-				font-size: 2.5em;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
-    }
+	.navbar-default .navbar-brand {
+		font-size: 2.5em;
+		-webkit-transition: all .3s;
+		-moz-transition: all .3s;
+		transition: all .3s;
+	}
 
-    .navbar-default .navbar-nav>.active>a {
-				border-radius: 3px;
-    }
+	.navbar-default .navbar-nav > .active > a {
+		border-radius: 3px;
+	}
 
-    .navbar-default.navbar-shrink {
-				padding: 10px 0;
-        background-color: #222;
-    }
+	.navbar-default.navbar-shrink {
+		padding: 10px 0;
+		background-color: #222;
+	}
 
-    .navbar-default.navbar-shrink .navbar-brand {
-				font-size: 2em;
-    }
+	.navbar-default.navbar-shrink .navbar-brand {
+		font-size: 2em;
+	}
 }
 
 /* ============================================= 
  * Main cover section 
  * ============================================= */
 header {
-    text-align: center;
-    color: #fff;
-    background-attachment: scroll;
-    /*background-image: url(../img/header-bg.jpg);*/
-		background-image: linear-gradient(
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ),
-    url(../img/header-bg.jpg);
+	text-align: center;
+	color: #fff;
+	background-attachment: scroll;
+	background-image: linear-gradient(
+		rgba(0, 0, 0, 0.2),
+		rgba(0, 0, 0, 0.2)
+	),
+	url(../img/header-bg.jpg);
 
-    background-position: center center;
-    background-repeat: none;
-    background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+	background-position: center center;
+	background-repeat: none;
+	background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
 }
 
 header .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px;
+	padding-top: 100px;
+	padding-bottom: 50px;
 }
 
 header .intro-text .intro-lead-in {
-    margin-bottom: 25px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 22px;
-    font-style: italic;
-    line-height: 22px;
+	margin-bottom: 25px;
+	font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 22px;
+	font-style: italic;
+	line-height: 22px;
 }
 
 header .intro-text .intro-heading {
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 50px;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 50px;
 }
 
-@media(min-width:768px) {
-    header .intro-text {
-        padding-top: 300px;
-        padding-bottom: 200px;
-    }
+@media (min-width: 768px) {
+	header .intro-text {
+		padding-top: 300px;
+		padding-bottom: 200px;
+	}
 
-    header .intro-text .intro-lead-in {
-        margin-bottom: 25px;
-        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 40px;
-        font-style: italic;
-        line-height: 40px;
-    }
+	header .intro-text .intro-lead-in {
+		margin-bottom: 25px;
+		font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 40px;
+		font-style: italic;
+		line-height: 40px;
+	}
 
-    header .intro-text .intro-heading {
-        margin-bottom: 50px;
-        text-transform: uppercase;
-        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 75px;
-        font-weight: 700;
-        line-height: 75px;
-    }
+	header .intro-text .intro-heading {
+		margin-bottom: 50px;
+		text-transform: uppercase;
+		font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 75px;
+		font-weight: 700;
+		line-height: 75px;
+	}
 }
 
 /* ============================================= 
  * "Section" tag styling section 
  * ============================================= */
 section {
-    padding: 100px 0;
+	padding: 100px 0;
 }
 
 section h2.section-heading {
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 2.75em;
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-size: 2.75em;
 }
 
 section h3.section-subheading {
-    margin-bottom: 60px;
-    text-transform: none;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 1.5em;
-    font-style: italic;
-    font-weight: 400;
+	margin-bottom: 60px;
+	text-transform: none;
+	font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	font-style: italic;
+	font-weight: 400;
 }
 
 /* Used to reduce amount of lower margin on mobile form factor for increased cohesion and reduced scrolling */
-@media(max-width:767px) {
-		section h3.section-subheading {
-				margin-bottom: 30px;
-		}
+@media (max-width: 767px) {
+	section h3.section-subheading {
+		margin-bottom: 30px;
+	}
 }
 
-@media(min-width:768px) {
-    section {
-        padding: 150px 0;
-    }
+@media (min-width: 768px) {
+	section {
+		padding: 150px 0;
+	}
 }
 
 /* ============================================= 
@@ -462,368 +465,369 @@ section h3.section-subheading {
 #services h4.service-heading,
 #services h5.service-heading,
 #services h6.service-heading {
-    margin: 15px 0;
-    text-transform: none;
+	margin: 15px 0;
+	text-transform: none;
 }
 
 /* ============================================= 
  * Song list section (a.k.a "Song List") 
  * ============================================= */
 /* Used to allow for easy "concatenation" of lists in smaller views that were split for larger form factor viewing */
-@media(max-width: 767px){
-		ul.merge-with-previous-list, ol.merge-with-previous-list {
-				margin-top:-10px;
-		}
+@media (max-width: 767px) {
+	ul.merge-with-previous-list, ol.merge-with-previous-list {
+		margin-top: -10px;
+	}
 }
 
-/* Formats the list items in the Song List section */ 
+/* Formats the list items in the Song List section */
 ul.repertoire li,
-ol.repertoire li{
-		font-size: 1.25em;
-		width:200px;
-    margin:0 auto;
-    text-align:left;
+ol.repertoire li {
+	font-size: 1.25em;
+	width: 200px;
+	margin: 0 auto;
+	text-align: left;
 }
 
 /* ============================================= 
  * "Meet the Band" section 
  * ============================================= */
 .band-member {
-    margin-bottom: 50px;
-    text-align: center;
+	margin-bottom: 50px;
+	text-align: center;
 }
 
 .band-member img {
-    margin: 0 auto;
-    border: 6px solid #222;
+	margin: 0 auto;
+	border: 6px solid #222;
 }
 
 .band-member h4 {
-    margin-top: 25px;
-    margin-bottom: 0;
-    text-transform: none;
+	margin-top: 25px;
+	margin-bottom: 0;
+	text-transform: none;
 }
 
 .band-member p {
-    margin-top: 0;
+	margin-top: 0;
 }
 
 ul.social-buttons {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 ul.social-buttons li a {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    font-size: 20px;
-    line-height: 40px;
-    outline: 0;
-    color: #fff;
-    background-color: #222;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    transition: all .3s;
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	font-size: 20px;
+	line-height: 40px;
+	outline: 0;
+	color: #fff;
+	background-color: #222;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
 }
 
 ul.social-buttons li a.increase-inner-spacing {
-		margin: 0px 15px;
+	margin: 0px 15px;
 }
 
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color:  #fc9814;
+	background-color: #fc9814;
 }
-/* ============================================= 
+
+/* =============================================
  * Book us section 
  * ============================================= */
 .timeline {
-    position: relative;
-    padding: 0;
-    list-style: none;
+	position: relative;
+	padding: 0;
+	list-style: none;
 }
 
 .timeline:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 40px;
-    width: 3px;
-    margin-left: -1.5px;
-    background-color: #a6a6a6;
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 40px;
+	width: 3px;
+	margin-left: -1.5px;
+	background-color: #a6a6a6;
 }
 
-.timeline>li {
-    position: relative;
-    margin-bottom: 50px;
-    min-height: 50px;
+.timeline > li {
+	position: relative;
+	margin-bottom: 50px;
+	min-height: 50px;
 }
 
-.timeline>li:before,
-.timeline>li:after {
-    content: " ";
-    display: table;
+.timeline > li:before,
+.timeline > li:after {
+	content: " ";
+	display: table;
 }
 
-.timeline>li:after {
-    clear: both;
+.timeline > li:after {
+	clear: both;
 }
 
-.timeline>li .timeline-panel {
-    float: right;
-    position: relative;
-    width: 100%;
-    padding: 0 20px 0 100px;
-    text-align: left;
+.timeline > li .timeline-panel {
+	float: right;
+	position: relative;
+	width: 100%;
+	padding: 0 20px 0 100px;
+	text-align: left;
 }
 
-.timeline>li .timeline-panel:before {
-    right: auto;
-    left: -15px;
-    border-right-width: 15px;
-    border-left-width: 0;
+.timeline > li .timeline-panel:before {
+	right: auto;
+	left: -15px;
+	border-right-width: 15px;
+	border-left-width: 0;
 }
 
-.timeline>li .timeline-panel:after {
-    right: auto;
-    left: -14px;
-    border-right-width: 14px;
-    border-left-width: 0;
+.timeline > li .timeline-panel:after {
+	right: auto;
+	left: -14px;
+	border-right-width: 14px;
+	border-left-width: 0;
 }
 
-.timeline>li .timeline-image {
-    z-index: 100;
-    position: absolute;
-    left: 0;
-    width: 80px;
-    height: 80px;
-    margin-left: 0;
-    border: 3px solid #222;
-    border-radius: 100%;
-    text-align: center;
-    color: #fff;
-    background-color:  #fc9814;
+.timeline > li .timeline-image {
+	z-index: 100;
+	position: absolute;
+	left: 0;
+	width: 80px;
+	height: 80px;
+	margin-left: 0;
+	border: 3px solid #222;
+	border-radius: 100%;
+	text-align: center;
+	color: #fff;
+	background-color: #fc9814;
 }
 
-.timeline>li .timeline-image h4 {
-    margin-top: 12px;
-    font-size: 10px;
-    line-height: 14px;
+.timeline > li .timeline-image h4 {
+	margin-top: 12px;
+	font-size: 10px;
+	line-height: 14px;
 }
 
-.timeline>li.timeline-inverted>.timeline-panel {
-    float: right;
-    padding: 0 20px 0 100px;
-    text-align: left;
+.timeline > li.timeline-inverted > .timeline-panel {
+	float: right;
+	padding: 0 20px 0 100px;
+	text-align: left;
 }
 
-.timeline>li.timeline-inverted>.timeline-panel:before {
-    right: auto;
-    left: -15px;
-    border-right-width: 15px;
-    border-left-width: 0;
+.timeline > li.timeline-inverted > .timeline-panel:before {
+	right: auto;
+	left: -15px;
+	border-right-width: 15px;
+	border-left-width: 0;
 }
 
-.timeline>li.timeline-inverted>.timeline-panel:after {
-    right: auto;
-    left: -14px;
-    border-right-width: 14px;
-    border-left-width: 0;
+.timeline > li.timeline-inverted > .timeline-panel:after {
+	right: auto;
+	left: -14px;
+	border-right-width: 14px;
+	border-left-width: 0;
 }
 
-.timeline>li:last-child {
-    margin-bottom: 0;
+.timeline > li:last-child {
+	margin-bottom: 0;
 }
 
 .timeline .timeline-heading h4 {
-    margin-top: 0;
-    color: inherit;
+	margin-top: 0;
+	color: inherit;
 }
 
-.timeline .timeline-body>p,
-.timeline .timeline-body>ul {
-    margin-bottom: 0;
+.timeline .timeline-body > p,
+.timeline .timeline-body > ul {
+	margin-bottom: 0;
 }
 
-@media(min-width:768px) {
-    .timeline:before {
-        left: 50%;
-    }
+@media (min-width: 768px) {
+	.timeline:before {
+		left: 50%;
+	}
 
-    .timeline>li {
-        margin-bottom: 100px;
-        min-height: 100px;
-    }
+	.timeline > li {
+		margin-bottom: 100px;
+		min-height: 100px;
+	}
 
-    .timeline>li .timeline-panel {
-        float: left;
-        width: 41%;
-        padding: 0 20px 20px 30px;
-        text-align: right;
-    }
+	.timeline > li .timeline-panel {
+		float: left;
+		width: 41%;
+		padding: 0 20px 20px 30px;
+		text-align: right;
+	}
 
-    .timeline>li .timeline-image {
-        left: 50%;
-        width: 100px;
-        height: 100px;
-        margin-left: -50px;
-    }
+	.timeline > li .timeline-image {
+		left: 50%;
+		width: 100px;
+		height: 100px;
+		margin-left: -50px;
+	}
 
-    .timeline>li .timeline-image h4 {
-        margin-top: 16px;
-        font-size: 13px;
-        line-height: 18px;
-    }
+	.timeline > li .timeline-image h4 {
+		margin-top: 16px;
+		font-size: 13px;
+		line-height: 18px;
+	}
 
-    .timeline>li.timeline-inverted>.timeline-panel {
-        float: right;
-        padding: 0 30px 20px 20px;
-        text-align: left;
-    }
+	.timeline > li.timeline-inverted > .timeline-panel {
+		float: right;
+		padding: 0 30px 20px 20px;
+		text-align: left;
+	}
 }
 
-@media(min-width:992px) {
-    .timeline>li {
-        min-height: 150px;
-    }
+@media (min-width: 992px) {
+	.timeline > li {
+		min-height: 150px;
+	}
 
-    .timeline>li .timeline-panel {
-        padding: 0 20px 20px;
-    }
+	.timeline > li .timeline-panel {
+		padding: 0 20px 20px;
+	}
 
-    .timeline>li .timeline-image {
-        width: 150px;
-        height: 150px;
-        margin-left: -75px;
-    }
+	.timeline > li .timeline-image {
+		width: 150px;
+		height: 150px;
+		margin-left: -75px;
+	}
 
-    .timeline>li .timeline-image h4 {
-        margin-top: 30px;
-        font-size: 18px;
-        line-height: 26px;
-    }
+	.timeline > li .timeline-image h4 {
+		margin-top: 30px;
+		font-size: 18px;
+		line-height: 26px;
+	}
 
-    .timeline>li.timeline-inverted>.timeline-panel {
-        padding: 0 20px 20px;
-    }
+	.timeline > li.timeline-inverted > .timeline-panel {
+		padding: 0 20px 20px;
+	}
 }
 
-@media(min-width:1200px) {
-    .timeline>li {
-        min-height: 170px;
-    }
+@media (min-width: 1200px) {
+	.timeline > li {
+		min-height: 170px;
+	}
 
-    .timeline>li .timeline-panel {
-        padding: 0 20px 20px 100px;
-    }
+	.timeline > li .timeline-panel {
+		padding: 0 20px 20px 100px;
+	}
 
-    .timeline>li .timeline-image {
-        width: 170px;
-        height: 170px;
-        margin-left: -85px;
-    }
+	.timeline > li .timeline-image {
+		width: 170px;
+		height: 170px;
+		margin-left: -85px;
+	}
 
-    .timeline>li .timeline-image h4 {
-        margin-top: 40px;
-    }
+	.timeline > li .timeline-image h4 {
+		margin-top: 40px;
+	}
 
-    .timeline>li.timeline-inverted>.timeline-panel {
-        padding: 0 100px 20px 20px;
-    }
+	.timeline > li.timeline-inverted > .timeline-panel {
+		padding: 0 100px 20px 20px;
+	}
 }
 
 /* ============================================= 
  * Client Aside 
  * ============================================= */
 aside.clients img {
-    margin: 50px auto;
+	margin: 50px auto;
 }
 
 /* ============================================= 
  * Contact section 
  * ============================================= */
 section#contact {
-    background-color: #222;
-    background-image: url(../img/map-image.png);
-    background-position: center;
-    background-repeat: no-repeat;
+	background-color: #222;
+	background-image: url(../img/map-image.png);
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 section#contact .section-heading {
-    color: #fff;
+	color: #fff;
 }
 
 section#contact .form-group {
-    margin-bottom: 25px;
+	margin-bottom: 25px;
 }
 
 section#contact .form-group input,
 section#contact .form-group textarea {
-    padding: 20px;
+	padding: 20px;
 }
 
 section#contact .form-group input.form-control {
-    height: auto;
+	height: auto;
 }
 
 section#contact .form-group textarea.form-control {
-    height: 236px;
+	height: 236px;
 }
 
 section#contact .form-control:focus {
-    border-color: #fc9814;
-		border-width:3px;
-    box-shadow: none;
-		color: #222;
+	border-color: #fc9814;
+	border-width: 3px;
+	box-shadow: none;
+	color: #222;
 }
 
 section#contact::-webkit-input-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #222;
+	text-transform: uppercase;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	color: #222;
 }
 
 section#contact:-moz-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #222;
+	text-transform: uppercase;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	color: #222;
 }
 
 section#contact::-moz-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #222;
+	text-transform: uppercase;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	color: #222;
 }
 
 section#contact:-ms-input-placeholder {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #222;
+	text-transform: uppercase;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	color: #222;
 }
 
 section#contact .text-danger {
-    color:  #fc9814;
-		font-weight:600;
+	color: #fc9814;
+	font-weight: 600;
 }
 
 /* ============================================= 
  * Page Footer
  * ============================================= */
 footer {
-    padding: 20px 0;
-    text-align: center;
+	padding: 20px 0;
+	text-align: center;
 }
 
 footer span.footer-text {
-    text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    line-height: 35px;
-		margin-bottom: 0;
+	text-transform: none;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 35px;
+	margin-bottom: 0;
 }

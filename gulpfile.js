@@ -7,7 +7,7 @@ var runSequence = require('run-sequence');
 var uglify = require('gulp-uglify');
 
 var paths = {
-	scripts: ['js/*.js', '!js/*.min.js'],
+	scripts: ['js/LikeABossa.js'],
 	libScripts: ['js/*.js', '!js/*.min.js',
 		'bower_components/jquery/dist/jquery.min.js' 
 	],

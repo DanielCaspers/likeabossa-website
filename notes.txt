@@ -1,0 +1,52 @@
+Analytics to track
+
+Soundcloud plays
+    How many songs does a user listen to?
+    How long does each user listen to the song before navigating away?
+
+    Data:
+        Song-Title
+        Song Duration Listened to
+        Total time listened - super
+        # Songs listened to (unique) - super
+        # Songs listened to (total) - super
+
+
+
+
+
+User Navigation
+    What site does the link point to (for the external case as it'd be easier to track)
+    Which links are getting clicked most often?
+
+    Internal links
+        Data
+            Internal Link Name
+
+    External Links
+        Data
+            External link name
+            External link address
+
+    Getting here
+        Data
+            Referrer address?
+
+
+
+
+
+
+User device
+    List of all Browsers used - super
+    List of all Devices (Nexus 5, iPhone, Desktop) - super
+    List of all viewports  - super
+
+    Initial browser orientation & viewport size
+
+    On form factor switch??
+
+Time on website
+    Super property
+
+

@@ -1,9 +1,9 @@
 # Ignore anything produced by JetBrains IDEs
-.idea/*
+.idea/
 
 # Package manager folders
 bower_components/
 node_modules/
 
 # Generated files
-dist/*
+dist/

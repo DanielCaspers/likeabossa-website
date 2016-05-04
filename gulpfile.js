@@ -6,20 +6,22 @@ var del = require('del');
 var runSequence = require('run-sequence');
 var uglify = require('gulp-uglify');
 
-var paths = {
+const paths = {
 	scripts: ['js/LikeABossa.js'],
-	libScripts: ['js/*.js', '!js/*.min.js',
-		'bower_components/jquery/dist/jquery.min.js' 
+	libScripts: [ 'bower_components/jquery/dist/jquery.min.js'
+		// 'bower_components/jquery/dist/jquery.min.js',
+
 	],
 	
 	styles: 'css/LikeABossa.css',
-	libStyles: ['bower_components/bootstrap/dist/css/bootstrap.min.css', 
+	libStyles: [ 'bower_components/bootstrap/dist/css/bootstrap.min.css',
 		'bower_components/font-awesome/css/font-awesome.min.css',
 		'css/fonts.css'
 	],
 
 	fonts: 'bower_components/font-awesome/fonts/font*.*',
 	images: 'img/**/*'
+
 };
 
 gulp.task('clean', function() {

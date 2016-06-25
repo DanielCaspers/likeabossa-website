@@ -33,12 +33,16 @@ body {
 	color: #fc9814;
 }
 
+.text-primary-muted{
+	color: rgba(252, 152, 20, 0.8);
+}
+
 .text-muted {
 	color: #777;
 }
 
 .text-light {
-	color: #ffffff;
+	color: #fff;
 }
 
 .text-shadow {
@@ -46,6 +50,10 @@ body {
 	0px 4px 2px rgba(0, 0, 0, 0.15),
 	0px 4px 2px rgba(0, 0, 0, 0.1),
 	0px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+span.avoidwrap {
+	display:inline-block;
 }
 
 a,
@@ -300,27 +308,19 @@ fieldset[disabled] .btn-xl.active {
 }
 
 /* The following #navbar-text media queries change text positioning on various screen sizes */
-@media (max-width: 320px) {
+@media (max-width: 400px) {
 	#navbar-text {
 		display: none;
 	}
 }
 
-@media (min-width: 321px) and (max-width: 408px) {
-	#navbar-text {
-		padding-top: 5px;
-		line-height: 18px;
-	}
-}
-
-@media (min-width: 409px) and (max-width: 513px) {
+@media (min-width: 425px) and (max-width: 461px) {
 	#navbar-text {
 		padding-top: 8px;
-		line-height: 18px;
 	}
 }
 
-@media (min-width: 514px) and (max-width: 767px) {
+@media (min-width: 462px) and (max-width: 767px) {
 	#navbar-text {
 		padding-top: 15px;
 	}
@@ -330,6 +330,7 @@ fieldset[disabled] .btn-xl.active {
 	.navbar-default {
 		padding: 25px 0;
 		border: 0;
+		width:100%;
 		background-color: transparent;
 		-webkit-transition: padding .3s;
 		-moz-transition: padding .3s;
@@ -357,6 +358,28 @@ fieldset[disabled] .btn-xl.active {
 	}
 }
 
+@media (min-width: 768px) and (max-width: 1199px){
+	.navbar-header{
+		width: 100%;
+	}
+
+	#navbar-text {
+		padding-top: 15px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	#navbar-text {
+		text-align: left;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+	#navbar-text {
+		text-align: right;
+	}
+}
+
 /* ============================================= 
  * Main cover section 
  * ============================================= */
@@ -371,7 +394,7 @@ header {
 	url(../img/header-bg.jpg);
 
 	background-position: center center;
-	background-repeat: none;
+	background-repeat: unset;
 	background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;

@@ -308,19 +308,19 @@ fieldset[disabled] .btn-xl.active {
 }
 
 /* The following #navbar-text media queries change text positioning on various screen sizes */
-@media (max-width: 400px) {
+@media (max-width: 390px) {
 	#navbar-text {
 		display: none;
 	}
 }
 
-@media (min-width: 425px) and (max-width: 461px) {
+@media (min-width: 391px) and (max-width: 465px) {
 	#navbar-text {
-		padding-top: 8px;
+		padding-top: 4px;
 	}
 }
 
-@media (min-width: 462px) and (max-width: 767px) {
+@media (min-width: 466px) and (max-width: 767px) {
 	#navbar-text {
 		padding-top: 15px;
 	}

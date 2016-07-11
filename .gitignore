@@ -6,4 +6,4 @@ bower_components/
 node_modules/
 
 # Generated files
-dist/
+# dist/
